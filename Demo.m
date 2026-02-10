@@ -20,9 +20,9 @@ time       =  zeros(Mnum,1);
 ergas   =  zeros(Mnum,1);
 
 
-load(dataname{i1});
+% load(dataname{i1});
 
-saveroad = ['result' ];
+% saveroad = ['result' ];
 if k11==1
     sample_ratio = 0.05;
 elseif k11==2
@@ -106,3 +106,4 @@ fprintf('%20s   %5.3f   \n', dataname{i1}, sample_ratio );
       psnr(i), ssim(i), fsim(i),ergas(i),time(i));
 end
 end
+
